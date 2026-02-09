@@ -1,0 +1,20 @@
+# Core dependencies
+streamlit>=1.30.0
+google-generativeai>=0.3.0
+ollama>=0.1.0  # Local LLM support via Ollama
+semanticscholar>=0.8.0
+sentence-transformers>=2.2.0
+pandas>=2.0.0
+numpy>=1.24.0
+pybtex>=0.24.0
+tqdm>=4.65.0
+
+# Supporting libraries
+torch>=2.0.0
+transformers>=4.30.0
+
+# Format conversion
+markdown2>=2.4.0
+weasyprint>=60.0  # PDF generation (primary)
+pdfkit>=1.0.0     # PDF generation (fallback)
+beautifulsoup4>=4.12.0  # HTML processing
