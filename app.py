@@ -183,9 +183,9 @@ with col1:
     st.subheader("📅 Publication Year Range")
     year_col1, year_col2 = st.columns(2)
     with year_col1:
-        start_year = st.number_input("Start Year", min_value=2000, max_value=2024, value=2020)
+        start_year = st.number_input("Start Year", min_value=2000, max_value=2025, value=2020)
     with year_col2:
-        end_year = st.number_input("End Year", min_value=2000, max_value=2024, value=2024)
+        end_year = st.number_input("End Year", min_value=2000, max_value=2025, value=2025)
 
 with col2:
     st.markdown(f"""
