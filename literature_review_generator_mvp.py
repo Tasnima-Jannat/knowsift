@@ -3,7 +3,7 @@ Literature Review Generator - MVP
 Generates comprehensive literature reviews using Semantic Scholar + Gemini 2.5 Flash
 
 Author: Tasnima Jannat
-Date: February 2025
+Date: February 2026
 """
 
 # ============================================================================
