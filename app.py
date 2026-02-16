@@ -130,7 +130,7 @@ with st.sidebar:
 
     output_format = st.selectbox(
         "Output Format",
-        ["PDF", "HTML", "Markdown"],
+        ["HTML", "PDF", "Markdown"],
         help="Choose your preferred output format. PDF will fallback to HTML if generation fails."
     )
 
