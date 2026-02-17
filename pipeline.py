@@ -1,4 +1,5 @@
 """
+KnowSift
 Literature Review Generator - Production Pipeline
 Generates comprehensive literature reviews using Semantic Scholar + Gemini 2.5 Flash
 
