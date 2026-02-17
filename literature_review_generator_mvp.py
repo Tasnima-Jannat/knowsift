@@ -5,6 +5,147 @@ Generates comprehensive literature reviews using Semantic Scholar + Gemini 2.5 F
 Author: Tasnima Jannat
 Date: February 2026
 """
+# 📚 KnowSift — An Evidence-First Literature Reasoning Engine
+
+## What This Project Is About 
+
+KnowSift is not a “paper summarizer” or a shortcut to writing research.  
+It is an **intellectual reasoning pipeline** designed to help researchers *think across literature* — by mapping themes, debates, contradictions, consensus, and research gaps in a traceable, academically responsible way.
+
+The core idea is simple:
+
+> **Good research doesn’t come from reading more papers —  
+> it comes from understanding how ideas relate, disagree, and evolve.**
+
+KnowSift exists to support that understanding.
+
+---
+
+## 🎯 What This System Does
+
+At a high level, KnowSift:
+
+- Performs **semantic discovery** across open-access research papers  
+- Filters and ranks papers by **intellectual contribution**, not popularity alone  
+- Clusters papers into **thematic groups**
+- Extracts **claims**, **evidence**, and **positions**
+- Detects **consensus**, **contradictions**, and **open debates**
+- Highlights **defensible research gaps**
+- Generates a **structured, citation-traceable literature understanding**
+- Preserves **academic rigor, citation ethics, and transparency**
+
+This system is designed to **assist reasoning**, not replace it.
+
+---
+
+## 🧠 Why This Is Different
+
+Most tools operate at the level of:
+- keywords  
+- summaries  
+- storage  
+
+KnowSift operates at the level of:
+- **ideas**
+- **arguments**
+- **evidence**
+- **relationships between studies**
+
+The real innovation here is **the architecture**, not the language model.
+
+---
+
+## 🏗️ High-Level Architecture Flow
+Each stage is modular, auditable, and replaceable.
+
+---
+
+## 🤖 Model Experimentation & Engineering Decisions
+
+This project deliberately explored **open-source LLMs first**, before choosing any commercial API.
+
+### What Was Tried
+
+First, I tried Qwen2.5-72B-Instruct.
+- Large open-source instruction models (70+ billion parameters)  
+  - Technically impressive  
+  - Required paid cloud GPUs to run  
+  - Not feasible on a local machine  
+
+Then, I tried DeepSeek R1
+- Advanced reasoning models
+  - Still required external GPU servers  
+  - Needed manual coordination to keep servers running  
+  - Added friction to rapid development  
+
+Then again, I tried Llama 3:8b
+- Small parameter models
+  - Ran locally  
+  - Output quality was shallow and unsuitable for academic reasoning  
+
+### The Reality Check
+
+- Running large models locally was **not viable** for sustained development  
+- Remote GPU dependence introduced **operational friction**  
+- Output quality varied widely and often failed academic expectations  
+
+### MVP Decision
+
+To move forward responsibly and build a **working MVP**, a commercial API was used.
+
+Among tested options, **Gemini 2.5 Flash** produced the most:
+- coherent
+- structured
+- academically usable
+- citation-aware outputs
+
+So it was chosen **purely as an implementation choice**, not a design dependency.
+
+---
+
+## ⚠️ Important Clarification
+
+> **The language model is NOT the core value of this system.**
+
+The **architecture**, reasoning flow, validation layers, and traceability logic are the real foundation.
+
+Any sufficiently strong model — open or commercial — can be swapped in.
+
+---
+
+## 🔮 Future Direction
+
+If this system is commercialized:
+
+- Dedicated inference infrastructure will be used
+- Stronger proprietary or commercial models may replace current APIs
+- The reasoning pipeline will remain unchanged
+- Model choice will remain an implementation detail, not a dependency
+
+The goal is **scalable, ethical, evidence-first research support**.
+
+---
+
+## 🧭 Philosophy
+
+KnowSift is built on one guiding principle:
+
+> **If a claim cannot be traced to evidence, it should not exist.**
+
+This project prioritizes:
+- clarity over speed  
+- reasoning over generation  
+- integrity over automation  
+
+---
+
+## 🤝 Closing Note
+
+Every researcher already knows how to read papers.  
+What’s scarce today is **cognitive bandwidth**.
+
+KnowSift exists to protect that —  
+and to help researchers reason better, together.
 
 # ============================================================================
 # SECTION 1: INSTALLATION & IMPORTS
