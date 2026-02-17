@@ -75,7 +75,7 @@ KnowSift/
 └── output/                     # Generated reviews (auto-created)
 ```
 
-## ⚙️ Configuration Options
+## ⚙️ Configuration Options (For admin)
 
 ### Rate Limiting
 
@@ -281,8 +281,7 @@ Built with:
 ## 📧 Support
 
 For issues and questions:
-- GitHub Issues: https://github.com/yourusername/knowsift/issues
-- Email: contact@knowsift.ai
+- Email: hello.knowsift@gmail.com
 
 ## 🔄 Changelog
 
