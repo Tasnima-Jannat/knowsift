@@ -16,43 +16,7 @@ Generate comprehensive, cited literature reviews automatically using AI. Perfect
 - 🎨 **Beautiful Streamlit UI** - Easy to use, no coding required
 - 🔒 **Secure** - API keys stored in backend, never exposed to users
 
-## 🚀 Quick Start
 
-### 1. Installation
-
-```bash
-# Clone or download this repository
-cd knowsift
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-**Note:** First run will download the sentence transformer model (~90MB). This is normal and only happens once.
-
-### 2. Configuration
-
-1. **Get your Gemini API key** from [Google AI Studio](https://makersuite.google.com/app/apikey)
-
-2. **(Optional) Get Semantic Scholar API key** from [here](https://www.semanticscholar.org/product/api)
-   - Without key: 10 requests/minute
-   - With key: 100 requests/minute (recommended)
-
-3. **Create `.streamlit/secrets.toml`** with your keys:
-
-```toml
-GEMINI_API_KEY = "your-actual-gemini-api-key-here"
-S2_API_KEY = ""  # Optional, leave empty if you don't have one
-MAX_REQUESTS_PER_HOUR = 10  # Adjust as needed
-```
-
-### 3. Run the App
-
-```bash
-streamlit run app.py
-```
-
-The app will open in your browser at `http://localhost:8501`
 
 ## 📖 Usage Guide
 
