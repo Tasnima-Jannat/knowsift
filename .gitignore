@@ -42,7 +42,7 @@ output/
 *.swo
 *~
 
-# OS
+# OS-Specified Files
 .DS_Store
 Thumbs.db
 desktop.ini
